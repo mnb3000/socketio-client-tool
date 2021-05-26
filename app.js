@@ -57,7 +57,7 @@ $(function() {
       }
 
       const socketOptions = $.extend({}, {path: form.path}, form.options, {
-        transports: ['websocket']
+        transports: ['polling']
       });
 
       console.log('Connecting to: ' + form.url + ' with options: ' + JSON.stringify(socketOptions));
