@@ -3,12 +3,8 @@ version: "3.0"
 
 services:
   socketio-client-tool:
-    build:
-      context: .
-      target: dev
+    build: .
     image: socketio-client-tool-dev
     container_name: socketio-client-tool-dev
-    volumes:
-      - .:/app:rw,cached
     ports:
-      - "8081:8080"
+      - "8081:80"
