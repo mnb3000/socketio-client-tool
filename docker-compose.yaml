@@ -6,5 +6,7 @@ services:
     build: .
     image: socketio-client-tool-dev
     container_name: socketio-client-tool-dev
+    environment:
+      - "ROUTE_PREFIX=socket"
     ports:
       - "8081:80"
